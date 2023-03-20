@@ -15,4 +15,11 @@ const Jules = new Hippo({
 console.log(Hugo._toString());
 console.log(Jules._toString());
 
-Hugo.fight(Hugo, Jules);
+
+Hugo.eat();
+Hugo.eat();
+Hugo.swim();
+Hugo.swim();
+Hugo.swim();
+
+console.log(Jules._toString());

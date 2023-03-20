@@ -15,22 +15,22 @@ class Hippo {
     }
 
     swim() {
-        console.log("I'm swimming")
         this._weight -= 300
+        return `${this._name} swim and now weighs ${this._weight} pounds`
     }
     eat() {
-        console.log("I'm eating")
         this._weight += 1000
+        return `${this._name} eat and now weighs ${this._weight} pounds`
     }
     fight(p1, p2) {
         if(p1._tusksSize > p2._tusksSize) {
-            console.log(`${p1._name} won the fight`)
             p1._weight += 500
             p2._weight -= 500
+            return `${p1._name} won the fight`
         } else if(p1._tusksSize < p2._tusksSize) {
-            console.log(`${p2._name} won the fight`)
             p2._weight += 500
             p1._weight -= 500
+            return `${p2._name} won the fight`
         }
     }
 
